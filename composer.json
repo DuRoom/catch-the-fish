@@ -1,0 +1,46 @@
+{
+    "name": "duroom/catch-the-fish",
+    "description": "Watch your users catch as many fishes as they can",
+    "keywords": [
+        "extension",
+        "duroom",
+        "minigame",
+        "april-fools"
+    ],
+    "type": "duroom-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NKDuy",
+            "email": "kn145660@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/DuRoom/catch-the-fish/issues",
+        "source": "https://github.com/DuRoom/catch-the-fish"
+    },
+    "require": {
+        "duroom/core": "^1.2",
+        "ext-json": "*"
+    },
+    "extra": {
+        "duroom-extension": {
+            "title": "Catch the fish",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-fish",
+                "backgroundColor": "#90d71b",
+                "color": "#166b14"
+            },
+            "optional-dependencies": [
+                "duroom/suspend",
+                "duroom/tags"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "DuRoom\\CatchTheFish\\": "src/"
+        }
+    }
+}

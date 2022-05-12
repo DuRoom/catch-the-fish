@@ -1,0 +1,17 @@
+{
+    "extends": "duroom-tsconfig",
+    "include": [
+        "src/**/*"
+    ],
+    "files": [
+        "shims.d.ts"
+    ],
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "duroom/*": [
+                "../vendor/duroom/core/js/dist-typings/*"
+            ]
+        }
+    }
+}
